@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TR-OxyCare</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <nav>
+      <div class="nav-container">
+        <div class="logo">TR-OxyCare</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#product">Our Products</a></li>
+          <li><a href="#">Machine on Rent</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="banner">
+        <h1>Your Health, Our Priority</h1>
+        <p>We offer high-quality medical equipment for <strong>Repair, Sale, and Rent</strong>. Contact us today to get the best deals.</p>
+        <button onclick="scrollToContact()">Contact Us Now</button>
+    </div>
+
+    <div class="main-div">
+      <div class="image-box">
+        <img src="./images/image-1.jpg" alt="Product Image" />
+      </div>
+      <div class="content-box">
+        <h2>Every Breath Matters — We Make Sure It's Healthy.</h2>
+        <p>
+          We provide high-quality medical oxygen equipment for
+          <span>sale, rent, and repair</span> services. Our mission is to ensure
+          that every patient receives reliable oxygen support.
+        </p>
+        <button onclick="scrollToContact()">Contact Us</button>
+      </div>
+    </div>
+
+    <h1 class="heading">Our Products</h1>
+
+    <div class="ourProducts" id="product">
+        <div class="product-card">
+            <img src="./images/image-1.jpg" alt="Product Image" />
+            <h2>Oxygen Concentrator</h2>
+            <p>High-quality medical oxygen concentrator with advanced features.</p>
+            <button>Contact Us</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/image-2.jpg" alt="Product Image" />
+            <h2>Oxygen Concentrator</h2>
+            <p>High-quality medical oxygen concentrator with advanced features.</p>
+            <button>Contact Us</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/image-3.jpg" alt="Product Image" />
+            <h2>Oxygen Concentrator</h2>
+            <p>High-quality medical oxygen concentrator with advanced features.</p>
+            <button onclick="scrollToContact()">Contact Us</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/image-4.jpg" alt="Product Image" />
+            <h2>Oxygen Concentrator</h2>
+            <p>High-quality medical oxygen concentrator with advanced features.</p>
+            <button onclick="scrollToContact()">Contact Us</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/image-5.jpg" alt="Product Image" />
+            <h2>Oxygen Concentrator</h2>
+            <p>High-quality medical oxygen concentrator with advanced features.</p>
+            <button onclick="scrollToContact()">Contact Us</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/image-6.jpg" alt="Product Image" />
+            <h2>Oxygen Concentrator</h2>
+            <p>High-quality medical oxygen concentrator with advanced features.</p>
+            <button onclick="scrollToContact()">Contact Us</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/image-7.jpg" alt="Product Image" />
+            <h2>Oxygen Concentrator</h2>
+            <p>High-quality medical oxygen concentrator with advanced features.</p>
+            <button onclick="scrollToContact()">Contact Us</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/image-8.jpg" alt="Product Image" />
+            <h2>Oxygen Concentrator</h2>
+            <p>High-quality medical oxygen concentrator with advanced features.</p>
+            <button onclick="scrollToContact()">Contact Us</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/image-9.jpg" alt="Product Image" />
+            <h2>Oxygen Concentrator</h2>
+            <p>High-quality medical oxygen concentrator with advanced features.</p>
+            <button onclick="scrollToContact()">Contact Us</button>
+        </div>
+      
+    </div>
+
+    <div class="contact-form" id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input
+          type="text"
+          name="phone"
+          placeholder="Your Phone Number"
+          required
+        />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="successMessage" style="display: none; color: green">
+        Your message has been sent successfully!
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 MyCompany. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

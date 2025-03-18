@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+ /* ===================== Dashing Banner ===================== */
+ .banner {
+    background-image: linear-gradient(to right, #00C853, #00A146);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner button {
+    background-color: #fff;
+    color: #00A146;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.banner button:hover {
+    background-color: #00A146;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 20px 40px rgba(0, 200, 83, 0.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================== Responsive Design ===================== */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 50px 10px;
+    }
+}
+
+nav {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    background-color: #333;
+    height: 3px;
+    width: 30px;
+    margin: 5px 0;
+}
+
+.heading{
+    text-align: center;
+}
+.main-div {
+    width: 80vw;
+    height: calc(100vh - 220px);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box, .content-box {
+    width: 50%;
+    height: 100%;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.content-box h2 {
+    margin-bottom: 15px;
+    color: #28a745;
+    font-size: 2rem;
+}
+
+.content-box p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.content-box p span{
+    font-weight: bold;
+}
+
+.content-box button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+}
+
+.content-box button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(40, 167, 69, 0.5);
+}
+
+/* ======= Product Card ======= */
+.ourProducts h1 {
+    text-align: center;
+}
+
+/* ======= Product Grid ======= */
+.ourProducts h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+/* ======= Product Grid ======= */
+.ourProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+    justify-content: center;
+}
+
+/* ======= Product Card ======= */
+.product-card {
+    background-color: #fff;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+/* ======= Image Style ======= */
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* ======= Product Title & Description ======= */
+.product-card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ======= Product Description ======= */
+.product-card p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* ======= Button ======= */
+.product-card button {
+    background-color: #00C853;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 15px 40px rgba(0, 200, 83, 0.4);
+    z-index: 10;
+}
+
+/* ✅ 3D Glass Effect on Button Click ======= */
+.product-card button:hover {
+    background-color: #00A146;
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 200, 83, 0.6);
+    letter-spacing: 1px;
+    filter: brightness(1.1);
+}
+
+/* ✅ ======= 3D Hover Effect on Card ======= */
+.product-card:hover {
+    transform: scale(1.05) rotateX(10deg) rotateY(10deg);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ ======= Shine Effect on Image ======= */
+.product-card:hover img {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+/* ✅ ======= Glassmorphism Glow on Hover ======= */
+.product-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 20%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* ✅ ======= Glow Effect on Card Hover ======= */
+.product-card:hover::before {
+    opacity: 1;
+}
+
+/* ✅ ======= Remove Hover Effect on Button Click ======= */
+.product-card:hover button {
+    transform: scale(1.1);
+}
+
+/* ✅ ======= Responsive Design ======= */
+@media (max-width: 1024px) {
+    .ourProducts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .ourProducts {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    transition: transform 0.4s ease;
+}
+
+.contact-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.4s, transform 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00C853;
+    transform: scale(1.02);
+}
+
+.contact-form button {
+    background-color: #00C853;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #00A146;
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 200, 83, 0.4);
+}
+
+#successMessage {
+    text-align: center;
+    font-size: 1rem;
+    color: green;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 600px) {
+    .ourProducts {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .main-div {
+        flex-direction: column;
+    }
+
+    .image-box, .content-box {
+        width: 100%;
+    }
+}
+
